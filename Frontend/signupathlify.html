@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        .container1 {
+            height: 330px;
+            width: 300px;
+            border-radius: 25px;
+            background-color: black;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: solid rgb(90, 90, 90);
+            border-width: 1px;
+        }
+
+        h2 {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+        }
+
+        .input-box1 input {
+            height: 33px;
+            width: 235px;
+            border-radius: 20px;
+            border: solid gray;
+            border-width: 1px;
+            background-color: black;
+            color: white;
+            padding: 0 10px;
+            margin: 5px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button {
+            height: 33px;
+            width: 255px;
+            border-radius: 20px;
+            margin: 15px auto;
+            cursor: pointer;
+            border: none;
+            display: block;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(37, 250, 37);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .input-box3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            font-family: Garamond, serif;
+            font-size: 16px;
+            margin-top: -20px;
+        }
+
+        .input-box3 a {
+            text-decoration: none;
+            color: rgb(52, 136, 255);
+
+        }
+
+        p {
+            color: rgb(191, 191, 191);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="input-box1">
+                <input type="text" id="mobileNo" name="mobileNo" placeholder="Mobile No" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+
+            <button type="submit">Sign Up</button><br>
+
+            <div class="input-box3">
+                <p>Have an account?</p>
+                <a href="loginathlify.html">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+
+</html>

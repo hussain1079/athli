@@ -1,0 +1,48 @@
+<!-- Main Content -->
+<div class="container">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <h3>Profile</h3>
+      <p>Welcome, <span id="username">[User Name]</span></p>
+      <ul>
+        <li><a href="#" tabindex="7">Connections</a></li>
+        <li><a href="#" tabindex="8">Groups</a></li>
+        <li><a href="#" tabindex="9">Events</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Feed -->
+    <div class="main-content">
+      <div class="post">
+        <textarea id="postContent" placeholder="Share an update..." tabindex="10"></textarea>
+        <button id="postButton" tabindex="11">Post</button>
+      </div>
+      <div id="postsContainer"></div>
+
+      <!-- Right Sidebar -->
+      <div class="right-sidebar">
+        <h3>News</h3>
+        <p>Latest updates from your network.</p>
+        <ul>
+          <li><a href="#" tabindex="12">Trending Articles</a></li>
+          <li><a href="#" tabindex="13">Trending Postings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Profile Update Form -->
+    <div class="profile-form" id="profile-form">
+      <h2>Update Profile</h2>
+      <form id="update-profile-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" tabindex="14" required>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" tabindex="15" required></textarea>
+        <button type="submit" tabindex="16">Save</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 ATHILIFY. All rights reserved.</p>
+    </footer>
